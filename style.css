@@ -1,0 +1,481 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans:wght@400;600&display=swap');
+  
+
+  /* font-family: 'Kanit', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    background-color: #031926;
+ }
+
+ .container{
+margin: 30px;    
+}
+
+ .first{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand h2{
+    font-family: 'Kanit', sans-serif;
+    color: #6369d1;
+    font-size: 25px;
+  }
+
+  .nav-bar{
+    margin-top: -30px;
+    background: #1e2d2f;
+    padding: 30px;
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    z-index: 11111;
+  }
+
+  .nav-bar ul {
+    margin-top: 70px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+  .nav-bar li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.nav-bar li a:focus{
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+ #check{
+    display: none;
+ }
+
+ label #btn,label #cancel{
+    position: absolute;
+    color: white;
+    z-index: 111111;
+ }
+
+ label #btn{
+    color: white;
+    left: 80%;
+    top: 35px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+ }
+
+ label #cancel{
+    left: -40px;
+    top: 20px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+ }
+
+ #check:checked ~ .nav-bar{
+    left: 200px;
+ }
+
+ #check:checked ~ label #btn{
+    opacity: 0;
+ }
+
+ #check:checked ~ label #cancel{
+    left: 220px;
+ }
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.plan h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.plan p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+}
+
+.choice .icon .fa{
+    margin: 0 20px;
+    color: black;
+    font-size: 25px;
+    width: 30px;
+    position: relative;
+}
+
+.choice .icon .fa::after{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid #6369d1;
+    left: 50%; 
+    top: 0;
+    background: black;
+    content: '';
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 #6369d1;
+             }
+        
+             20%{
+                box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+             }
+        
+             30%{
+                box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+             }
+}
+
+
+.packages{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    padding: 70px;
+}
+
+.package-1{
+    border: 1px solid #1e2d2f;
+    padding: 20px;
+    color: white;
+    width: 320px;
+}
+
+
+.intro h1{
+    color: #9097c0;
+    margin: 0px 0;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+}
+
+.intro h1 span{
+    font-size: 17px;
+    margin-left: -5px;
+}
+
+.intro p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.content-1 p{
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.content-2 p{
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.second{
+    margin-left: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.info .fa{
+color: #6369d1;
+font-size: 14px;
+margin-right: 10px;
+}
+
+button{
+    margin-top: 10px;
+}
+
+.button-1{
+    background: #9097c0;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    /* width: 80%; */
+}
+
+/* #########Package 2######## */
+.package-2{
+    border: 2px solid #6369d1;
+    padding: 20px;
+    color: white;
+    position: relative;
+    width: 320px;
+    margin-top: 100px;
+}
+
+.package-2::before{
+    position: absolute;
+    content: "Recommended";
+    width: 101.5%;
+    height: 50px;
+    background: #6369d1;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+top: -50px;
+left: -2.5px;
+}
+
+.intro h1.special{
+    color: #6369d1;
+}
+
+.button-2{
+    background: #6369d1;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+/* #######Package 3###### */
+.package-3{
+    border: 2px solid #1e2d2f;
+    padding: 20px;
+    color: white;
+    margin-top: 70px;
+}
+
+.button-3{
+    background: #9097c0;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+@media screen and (min-width:768px){
+.header{
+    background: #1e2d2f;
+    width: calc(100% + 60px);
+    margin: -30px 0 30px -30px;
+    padding: 20px;
+}
+
+.brand h2{
+    margin-left: 40px;
+}
+
+    .nav-bar{
+        margin-top: initial;
+        background: none;
+        padding: initial;
+        width: initial;
+        height: initial;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        position: initial;
+        left: initial;
+      }
+
+
+      .nav-bar ul {
+        margin-top: initial;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    
+    .nav-bar li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-bottom: initial;
+        padding-right: 50px;
+    }
+
+    .nav-bar li a:focus,.nav-bar li a:hover{
+        font-weight: bold;
+        text-decoration: underline; 
+     } 
+
+    label #btn,label #cancel{
+        display: none;
+    }
+    
+    .packages{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 70px;
+        margin-top: 30px;
+    }
+    
+    .package-1{
+        border: 1px solid #1e2d2f;
+        padding: 20px;
+        color: white;
+        width: 100%;
+    }
+    
+    
+    .intro h1{
+        color: #9097c0;
+        margin: 0px 0;
+        font-family: 'Kanit', sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    .intro h1 span{
+        font-size: 17px;
+        margin-left: -5px;
+    }
+    
+    .intro p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+    
+    .content-1 p{
+        margin-bottom: 8px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+    
+    .content-2 p{
+        margin-bottom: 8px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    .second{
+        margin-left: 27px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+    
+    .info .fa{
+    color: #6369d1;
+    font-size: 14px;
+    margin-right: 10px;
+    }
+    
+    .button-1{
+        background: #9097c0;
+        color: white;
+        padding: 10px 100px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        width: 80%;
+    }
+    
+    /* #########Package 2######## */
+    .package-2{
+        border: 2px solid #6369d1;
+        padding: 20px;
+        color: white;
+        position: relative;
+        width: 100%;
+    }
+    
+    .package-2::before{
+        position: absolute;
+        content: "Recommended";
+        width: 101.5%;
+        height: 50px;
+        background: #6369d1;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    left: -2.5px;
+    }
+    
+    .intro h1.special{
+        color: #6369d1;
+    }
+    
+    .button-2{
+        background: #6369d1;
+        color: white;
+        padding: 10px 100px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+    
+    
+    /* #######Package 3###### */
+    .package-3{
+        border: 2px solid #1e2d2f;
+        padding: 20px;
+        color: white;
+    }
+    
+    .button-3{
+        background: #9097c0;
+        color: white;
+        padding: 10px 100px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+}
